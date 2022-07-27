@@ -8,6 +8,11 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <h1 class="text-cyan-500">Welcome to Laravel Test Page</h1>
+    <h1 class="text-cyan-500 text-3xl">Welcome to Laravel Test Page</h1>
+    <i class="fa fa-copy"></i>
+    <i class="fa fa-save"></i>
+    <i class="fa fa-trash"></i>
+    <i class="fa fa-home"></i>
+    <i class="fa fa-laptop-code"></i>
 </body>
 </html>
