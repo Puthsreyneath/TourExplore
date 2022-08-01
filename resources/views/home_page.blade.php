@@ -60,8 +60,8 @@
     <div class="swiper-pagination"></div>
 
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev text-green-600"></div>
-    <div class="swiper-button-next text-green-600"></div>
+    <div class="swiper-button-prev text-green-600 dark:text-gray-800"></div>
+    <div class="swiper-button-next text-green-600 dark:text-gray-800"></div>
 
   </div>
 </section>
