@@ -12,6 +12,8 @@
         [x-cloak] { display: none !important; }
     </style>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -20,6 +22,8 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body class="bg-[#DEEEE2] dark:bg-gray-700" x-data="{ openMenu: false }"
@@ -72,9 +76,9 @@
 {{-- navigation bar --}}
 
 {{-- content --}}
-    <div class="container h-screen">
-        @yield('content')
-    </div>
+
+    @yield('content')
+
 {{-- content --}}
     
 {{-- footer --}}
