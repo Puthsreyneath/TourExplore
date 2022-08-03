@@ -25,6 +25,10 @@ Route::get('/explore', function () {
     return view('explore_page');
 });
 
+Route::get('/about_us', function () {
+    return view('about_us_page');
+});
+
 Route::get('/master', function () {
     return view('layout.master');
 });
