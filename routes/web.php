@@ -21,6 +21,10 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::get('/explore', function () {
+    return view('explore_page');
+});
+
 Route::get('/master', function () {
     return view('layout.master');
 });

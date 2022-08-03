@@ -4,15 +4,9 @@
     margin: 0;
 }
 .swiper-pagination-bullet{
-    width: 20px;
-    height: 20px;
-    border: solid white 2px;
-    background: transparent;
-    opacity: 1;
+    @apply w-5 h-5 border-2 border-white opacity-100 bg-transparent
 }
 
 .swiper-pagination-bullet-active {
-    background: green;
-    opacity: 1;
-    border: transparent;
+    @apply bg-green-600 opacity-100 border-transparent dark:bg-slate-700
 }
