@@ -13,47 +13,55 @@
       <div
         class="swiper-slide w-full h-full bg-no-repeat bg-cover bg-left bg-fixed flex flex-col items-center justify-center"
         style="background-image: url('https://cambodiatravel.com/images/2020/12/Bayons-face-towers-angkor-thom-cambodia-2.jpg')">
-        <h1 class="text-white text-xl text-center">Angkor Wat Temple is the most <br> amazing place
-          to visit!</h1>
-        <button
-          class="p-2 bg-green-800 text-white mt-5 rounded hover:bg-white hover:text-green-700 border-transparent hover:border-2 hover:border-green-700 dark:bg-gray-700 dark:hover:bg-gray-50 dark:hover:text-gray-700 dark:hover:border-gray-800">see
-          more</button>
+        <div class="bg-black/50 p-4 w-[30%] flex flex-col items-center">
+          <h1 class="text-white text-xl text-center break-words">Angkor Wat Temple is the most amazing place
+            to visit!</h1>
+          <button
+            class="p-2 bg-green-800 text-white mt-5 rounded hover:bg-white hover:text-green-700 border-transparent hover:border-2 hover:border-green-700 dark:bg-gray-700 dark:hover:bg-gray-50 dark:hover:text-gray-700 dark:hover:border-gray-800">see
+            more</button>
+        </div>
       </div>
       <div
         class="swiper-slide w-full h-full bg-no-repeat bg-cover bg-left bg-fixed flex flex-col items-center justify-center"
         style="background-image: url('https://www.gildshire.com/wp-content/uploads/2017/04/angkor-wat.jpg')">
-        <h1 class="text-white text-xl text-center">Angkor Wat Temple is the most <br> amazing place
+        <div class="bg-black/50 p-4 w-[30%] flex flex-col items-center">
+        <h1 class="text-white text-xl text-center">Angkor Wat Temple is the most amazing place
           to visit!</h1>
         <button
           class="p-2 bg-green-800 text-white mt-5 rounded hover:bg-white hover:text-green-700 border-transparent hover:border-2 hover:border-green-700 dark:bg-gray-700 dark:hover:bg-gray-50 dark:hover:text-gray-700 dark:hover:border-gray-800">see
           more</button>
+        </div>
       </div>
       <div
         class="swiper-slide w-full h-full bg-no-repeat bg-cover bg-left bg-fixed flex flex-col items-center justify-center"
         style="background-image: url('https://whc.unesco.org/uploads/thumbs/site_1224_0017-1200-630-20130711145029.jpg')">
-        <h1 class="text-white text-xl text-center">Angkor Wat Temple is the most <br> amazing place
-          to visit!</h1>
+        <div class="bg-black/50 p-4 w-[30%] flex flex-col items-center">
+        <h1 class="text-white text-xl text-center">Preah Vihear in Cambodia is a very impressive hindu temple situated on top of a 547 meter high hill in the Dangrek Mountain range in the northeast of Cambodia!</h1>
         <button
           class="p-2 bg-green-800 text-white mt-5 rounded hover:bg-white hover:text-green-700 border-transparent hover:border-2 hover:border-green-700 dark:bg-gray-700 dark:hover:bg-gray-50 dark:hover:text-gray-700 dark:hover:border-gray-800">see
           more</button>
+        </div>
       </div>
       <div
         class="swiper-slide w-full h-full bg-no-repeat bg-cover bg-left bg-fixed flex flex-col items-center justify-center"
         style="background-image: url('https://angkorfocus.com/backoffice/uploads/thumbs/new-Bokor-Mountain.jpg')">
-        <h1 class="text-white text-xl text-center">Angkor Wat Temple is the most <br> amazing place
-          to visit!</h1>
+        <div class="bg-black/50 p-4 w-[30%] flex flex-col items-center">
+        <h1 class="text-white text-xl text-center">Bokor National Park is one of Cambodia's most beautiful and most mystical national parks.
+          </h1>
         <button
           class="p-2 bg-green-800 text-white mt-5 rounded hover:bg-white hover:text-green-700 border-transparent hover:border-2 hover:border-green-700 dark:bg-gray-700 dark:hover:bg-gray-50 dark:hover:text-gray-700 dark:hover:border-gray-800">see
           more</button>
+        </div>
       </div>
       <div
         class="swiper-slide w-full h-full bg-no-repeat bg-cover bg-left bg-fixed flex flex-col items-center justify-center"
         style="background-image: url('https://construction-property.com/wp-content/uploads/2020/06/KKKrao-01.jpg')">
-        <h1 class="text-white text-xl text-center">Angkor Wat Temple is the most <br> amazing place
-          to visit!</h1>
+        <div class="bg-black/50 p-4 w-[30%] flex flex-col items-center">
+        <h1 class="text-white text-xl text-center">Koh Kong is the most southwestern province of Cambodia.</h1>
         <button
           class="p-2 bg-green-800 text-white mt-5 rounded hover:bg-white hover:text-green-700 border-transparent hover:border-2 hover:border-green-700 dark:bg-gray-700 dark:hover:bg-gray-50 dark:hover:text-gray-700 dark:hover:border-gray-800">see
           more</button>
+        </div>
       </div>
     </div>
     <!-- If we need pagination -->

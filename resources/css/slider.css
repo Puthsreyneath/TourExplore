@@ -1,7 +1,5 @@
 .swiper-pagination{
-    position: absolute;
-    top: 90%;
-    margin: 0;
+    @apply absolute top-[90%] m-0
 }
 .swiper-pagination-bullet{
     @apply w-5 h-5 border-2 border-white opacity-100 bg-transparent
