@@ -32,3 +32,7 @@ Route::get('/about_us', function () {
 Route::get('/master', function () {
     return view('layout.master');
 });
+
+Route::get('/product_detail', function () {
+    return view('product_detail_page');
+});

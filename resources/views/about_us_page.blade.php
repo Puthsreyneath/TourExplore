@@ -15,7 +15,9 @@
 
     <div class="my-16 mx-10 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
         <div class="rounded overflow-hidden shadow-lg text-center">
-          <img class="rounded-full" src="https://dummyimage.com/300" alt="Name">
+          <div class="flex justify-center items-center">
+            <img class="rounded-full" src="https://dummyimage.com/300" alt="Name">
+          </div>
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">Name</div>
             <p class="text-gray-700 text-base">Email</p>
@@ -23,7 +25,9 @@
           </div>
         </div>
         <div class="rounded overflow-hidden shadow-lg text-center">
-          <img class="rounded-full" src="https://dummyimage.com/300" alt="Name">
+          <div class="flex justify-center items-center">
+            <img class="rounded-full" src="https://dummyimage.com/300" alt="Name">
+          </div>
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">Name</div>
             <p class="text-gray-700 text-base">Email</p>
@@ -31,7 +35,9 @@
           </div>
         </div>
         <div class="rounded overflow-hidden shadow-lg text-center">
-          <img class="rounded-full" src="https://dummyimage.com/300" alt="Name">
+          <div class="flex justify-center items-center">
+            <img class="rounded-full" src="https://dummyimage.com/300" alt="Name">
+          </div>
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">Name</div>
             <p class="text-gray-700 text-base">Email</p>
