@@ -36,3 +36,7 @@ Route::get('/master', function () {
 Route::get('/product_detail', function () {
     return view('product_detail_page');
 });
+
+Route::get('/detail', function () {
+    return view('detail_page');
+});
