@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('highlight');
             $table->string('description');
             $table->string('image');
-            $table->string('category');
+            $table->enum('category', ['Mountain', 'Beach', 'Temple', 'Popular']);
             $table->double('rate');
             $table->foreignId('location_id')->constrained('locations')->onUpdate('cascade')
             ->onDelete('cascade');
