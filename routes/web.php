@@ -24,3 +24,12 @@ Route::get('/test', function () {
 Route::get('/master', function () {
     return view('layout.master');
 });
+Route::get('/service', function () {
+    return view('service_page');
+});
+Route::get('/detail', function () {
+    return view('detail_info');
+});
+Route::get('/book', function () {
+    return view('booking');
+});
