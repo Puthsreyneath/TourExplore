@@ -49,7 +49,7 @@
 </section>
 
 <section>
-    <div class="my-16 mx-10">
+    <div class="my-16 md:w-[90%] w-4/5 mx-auto">
         <h2 class="font-black text-4xl text-green-700 pb-9">Our Project</h2>
         <div class="bg-slate-300 flex justify-center rounded-3xl mx-56">
           <p class="text-3xl px-5 py-3">Our project is for helping traveler to reduce the burden of where to go and also give more information about the location like culture, food, tradition, what to enjoy there.
