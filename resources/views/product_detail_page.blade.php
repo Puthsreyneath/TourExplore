@@ -60,13 +60,15 @@
                 <div class="flex flex-col p-4 leading-normal items-center md:items-start">
                     <h5 class="mb-2 md:text-2xl text-lg font-bold tracking-tight text-gray-900 dark:text-white">Tiara
                         Sam</h5>
-                    <div class="flex items-center mb-3">
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                    </div>
+                        <div class="rating-css">
+                            <div class="star-icon">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
                     <p class="font-normal md:text-xl text-sm text-gray-700 dark:text-gray-400">Lorem Ipsum is simply
                         dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -170,12 +172,19 @@
         <div class="space-y-4 text-xl mb-10">
             <div class="my-5 flex flex-row items-center md:justify-center space-x-4">
                 <p>Rate Product:</p>
-                <div class="flex flex-row items-center space-x-2 text-2xl">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                <div class="rating-css">
+                    <div class="star-icon">
+                        <input type="radio" value="1" name="product_rating" checked id="rating1">
+                        <label for="rating1" class="fa fa-star"></label>
+                        <input type="radio" value="2" name="product_rating" id="rating2">
+                        <label for="rating2" class="fa fa-star"></label>
+                        <input type="radio" value="3" name="product_rating" id="rating3">
+                        <label for="rating3" class="fa fa-star"></label>
+                        <input type="radio" value="4" name="product_rating" id="rating4">
+                        <label for="rating4" class="fa fa-star"></label>
+                        <input type="radio" value="5" name="product_rating" id="rating5">
+                        <label for="rating5" class="fa fa-star"></label>
+                    </div>
                 </div>
             </div>
             <div>
