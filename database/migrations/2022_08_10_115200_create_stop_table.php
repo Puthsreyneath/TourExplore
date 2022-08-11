@@ -13,24 +13,22 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('personal_infos', function (Blueprint $table) {
+        Schema::create('stop', function (Blueprint $table) {
             $table->id();
-            $table->string('fname');
-            $table->string('lname');
-            $table->string('email');
-            $table->string('tel');
-            $table->string('address');
+            $table->string('name');
+            $table->foreignId('transport_id')->constrained('transport')->onUpdate('cascade')
+            ->onDelete('cascade');
             $table->timestamps();
         });
     }
 
-    /***
+    /**
      * Reverse the migrations.
      *
      * @return void
      */
     public function down()
     {
-        Schema::dropIfExists('personal_infos');
+        Schema::dropIfExists('stop');
     }
 };

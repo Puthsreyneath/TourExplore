@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use App\Models\Location;
 
-class Place extends Model{
+class places extends Model{
     protected $fillable = ['name','hightlight','description','image','category','rate','location_id'];
 
 

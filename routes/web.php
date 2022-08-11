@@ -1,8 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
+
+use App\Http\Controllers\SearchConreoller;
+use App\Http\Controllers\BookingController;
+
+=======
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\PlaceController;
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,6 +60,9 @@ Route::controller(PlaceController::class)->group(function () {
 Route::get('/', function () {
     return view('home_page');
 });
+// Route::get('/service', function () {
+//     return view('service_page');
+// });
 
 Route::get('/test', function () {
     return view('test');
@@ -73,10 +83,46 @@ Route::get('/master', function () {
     return view('layout.master');
 });
 
+// Route::get('/service', function () {
+//     return view('service_page');
+// });
+
+Route::get('/info', function () {
+    return view('detail_info');
+});
+// Route::get('/book', function () {
+//     return view('booking');
+// });
+
 Route::get('/product_detail', function () {
     return view('product_detail_page');
 });
 
+<<<<<<< HEAD
+Route::get('/detail','App\Http\Controllers\PlaceController@getdetailplace');
+Route::get('/service','App\Http\Controllers\PlaceController@getplace');
+
+Route::get('booking/create','App\Http\Controllers\BookingController@create');
+Route::post('booking','App\Http\Controllers\BookingController@store');
+Route::get('booking','App\Http\Controllers\BookingController@gethotel');
+Route::get('/transport','App\Http\Controllers\BookingController@transportation');
+Route::post('/getstop','App\Http\Controllers\BookingController@getstop');
+
+Route::get('/service/search','App\Http\Controllers\SearchController@search');
+
+
+
+
+=======
 Route::get('/detail', function () {
     return view('detail_page');
 });
+
+Route::get('booking/create','App\Http\Controllers\BookingController@create');
+Route::post('/booking','App\Http\Controllers\BookingController@store');
+Route::get('/booking','App\Http\Controllers\BookingController@gethotel');
+Route::get('/transport','App\Http\Controllers\BookingController@transportation');
+Route::post('/getstop','App\Http\Controllers\BookingController@getstop');
+Route::get('/service','App\Http\Controllers\PlaceController@getplace');
+Route::get('/search','App\Http\Controllers\PlaceController@search');
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581

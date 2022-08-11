@@ -9,8 +9,20 @@
         <a href="{{url('/explore')}}"
             class="dark:bg-gray-500 dark:hover:bg-gray-800 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-7 rounded-full">
             Back
+<<<<<<< HEAD
+        </button>
+        @foreach($places as $p)
+                    @if($loop->index === 1)
+        <h1 class="my-10 font-black text-4xl text-green-700 dark:text-white text-center">
+                    {{$p->name}}
+                     
+        </h1>
+        @endif   
+        @endforeach   
+=======
     </a>
         <h1 class="my-10 font-black text-4xl text-green-700 dark:text-white text-center">Koh kong Mangrove Forest</h1>
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581
         <img class="rounded-3xl w-full h-full object-fill"
             src="https://angkorfocus.com/backoffice/uploads/attraction-Koh%20Kong%20Introduction%20Mangrove%20Forest%20Koh%20Kong.jpg"
             alt="">
@@ -25,10 +37,17 @@
                     <span class="fa fa-star"></span>
                 </div>
             </div>
-            <div class="flex space-x-16">
-                <p>Type:</p>
-                <p>silk</p>
-            </div>
+            @foreach($places as $p)
+                @if($loop->index === 1)
+                    <div class="flex space-x-16">
+                        <p>Type:</p>
+                        <p>
+                            {{$p->category}}
+                        </p>
+                    </div>
+                @endif   
+            @endforeach
+            
             <div class="flex space-x-9">
                 <p>Contact:</p>
                 <p>0XX XXX XXXX</p>

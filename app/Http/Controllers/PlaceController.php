@@ -1,8 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
+<<<<<<< HEAD
+use App\Models\Location;
+use DB;
+use App\Models\Transport;
+use Illuminate\Http\Request;
+use App\Models\places;
 
+class PlaceController extends Controller
+{
+    public function getplace(){
+        $places = \App\Models\places::with('location')->get();
+=======
+use DB;
 use App\Models\Place;
+use App\Models\Hotels;
+use App\Models\Location;
+use App\Models\Stop;
+use App\Models\Transport;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -66,4 +82,44 @@ class PlaceController extends Controller
         Place::find($place_id)->delete();
         return redirect('/admin.place')->with('message', 'Deleted Successfully');
     }
+    public function getplace(){
+        $places = \App\Models\Place::with('location')->get();
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581
+        $locations = \App\Models\Location::with('places')->get();
+        $transports = DB::select('select * from transport');
+
+        
+        return view('service_page',compact(
+            'places','locations','transports'
+        )
+        );
+    }
+   
+    public function getdetailplace(){
+<<<<<<< HEAD
+        $places = \App\Models\places::with('location')->get();
+=======
+        $places = \App\Models\Place::with('location')->get();
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581
+        $locations = \App\Models\Location::with('places')->get();
+        $transports = DB::select('select * from transport');
+
+        
+        return view('detail_page',compact(
+            'places','locations','transports'
+        )
+        );
+    }
+<<<<<<< HEAD
+=======
+    public function search(Request $request){
+        $output="";
+        $searching=DB::select('select * from places' )->where('name','Like','%'.$request->search.'%')->get();
+        foreach($searching as $d){
+            $output.= '<tr>'.$d->name.'</tr>';
+        }
+        echo $output;
+    
+    }
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581
 }
