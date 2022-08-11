@@ -2,6 +2,8 @@
 
 @section('title', 'Detail')
 
+@include('dbconfig.testdb')
+
 @section('content')
 
 <section>
@@ -74,7 +76,7 @@
             <div><a href=""><img class="w-30 h-20" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSP39RzMJLLdbkvjfbiVwYw2gozVcaYd6HA&usqp=CAU" alt=""></a></div>
             </div>
         <div>
-            <a href=""><button class="bg-green-400 px-4 py-3">Explore more</button></a>
+            <a href=""><button class="bg-green-400 px-4 py-3" method="POST">Explore more</button></a>
         </div>
     </section>
 </section>

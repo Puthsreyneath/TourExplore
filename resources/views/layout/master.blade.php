@@ -47,7 +47,7 @@
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/test" class="{{ Request::is('test') ? 'border-b-2 border-b-white' : '' }}">About</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/explore" class="{{  Request::is('explore') ? 'border-b-2 border-b-white' : '' }}">Explore</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Shop</a></li>
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Service</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/service" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Service</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white mr-10"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Contact</a></li>
                     <li><a href=""><i class="fa-solid fa-circle-user text-2xl mr-8"></i></a></li>
                 </ul>
