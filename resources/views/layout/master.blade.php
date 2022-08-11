@@ -46,7 +46,7 @@
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/" class="{{  Request::is('/') ? 'border-b-2 border-b-white' : '' }}">home</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/about_us" class="{{ Request::is('about_us') ? 'border-b-2 border-b-white' : '' }}">About</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/explore" class="{{  Request::is('explore') ? 'border-b-2 border-b-white' : '' }}">Explore</a></li>
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Shop</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/shop" class="{{  Request::is('/shop') ? 'border-b-2 border-b-white' : '' }}">Shop</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Service</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white mr-10"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Contact</a></li>
                     <li>@if (Route::has('register'))
@@ -72,7 +72,7 @@
             <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/" class="block p-4 {{ Request::is('/') ? 'bg-green-300 dark:bg-gray-700' : '' }}">home</a></li>
             <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/about_us" class="block p-4 {{ Request::is('about_us') ? 'bg-green-300 dark:bg-gray-700' : '' }}">About</a></li>
             <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/explore" class="block p-4 {{ Request::is('explore') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Explore</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Shop</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/shop" class="block p-4 {{ Request::is('shop') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Shop</a></li>
             <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Service</a></li>
             <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Contact</a></li>
             <li>
