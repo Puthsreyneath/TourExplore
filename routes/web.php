@@ -53,6 +53,9 @@ Route::controller(PlaceController::class)->group(function () {
 Route::get('/', function () {
     return view('home_page');
 });
+// Route::get('/service', function () {
+//     return view('service_page');
+// });
 
 Route::get('/test', function () {
     return view('test');
@@ -80,3 +83,11 @@ Route::get('/product_detail', function () {
 Route::get('/detail', function () {
     return view('detail_page');
 });
+
+Route::get('booking/create','App\Http\Controllers\BookingController@create');
+Route::post('/booking','App\Http\Controllers\BookingController@store');
+Route::get('/booking','App\Http\Controllers\BookingController@gethotel');
+Route::get('/transport','App\Http\Controllers\BookingController@transportation');
+Route::post('/getstop','App\Http\Controllers\BookingController@getstop');
+Route::get('/service','App\Http\Controllers\PlaceController@getplace');
+Route::get('/search','App\Http\Controllers\PlaceController@search');

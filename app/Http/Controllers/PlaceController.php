@@ -1,8 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use App\Models\Place;
+use App\Models\Hotels;
+use App\Models\Location;
+use App\Models\Stop;
+use App\Models\Transport;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -65,5 +69,37 @@ class PlaceController extends Controller
     {
         Place::find($place_id)->delete();
         return redirect('/admin.place')->with('message', 'Deleted Successfully');
+    }
+    public function getplace(){
+        $places = \App\Models\Place::with('location')->get();
+        $locations = \App\Models\Location::with('places')->get();
+        $transports = DB::select('select * from transport');
+
+        
+        return view('service_page',compact(
+            'places','locations','transports'
+        )
+        );
+    }
+   
+    public function getdetailplace(){
+        $places = \App\Models\Place::with('location')->get();
+        $locations = \App\Models\Location::with('places')->get();
+        $transports = DB::select('select * from transport');
+
+        
+        return view('detail_page',compact(
+            'places','locations','transports'
+        )
+        );
+    }
+    public function search(Request $request){
+        $output="";
+        $searching=DB::select('select * from places' )->where('name','Like','%'.$request->search.'%')->get();
+        foreach($searching as $d){
+            $output.= '<tr>'.$d->name.'</tr>';
+        }
+        echo $output;
+    
     }
 }

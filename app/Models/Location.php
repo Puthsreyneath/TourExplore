@@ -1,21 +1,22 @@
 <?php
 
 namespace App\Models;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Hotels;
+use App\Models\Places;
+class Location extends Model{
+    
+    protected $fillable = ['id','province','name_code'];
 
-class Location extends Model
-{
-    use HasFactory;
-
-    protected $table = 'locations';
-
-    protected $fillable = [
-        'province', 'name_code'
-    ];
-
+    public function hotels(){
+        return $this->hasMany(Hotels::class,'location_id','id','province');
+    }
     public function places(){
-        return $this->hasMany(Place::class,'location_id','id');
+        return $this->hasMany(Hotels::class,'location_id','id','province');
     }
 }
+
+
+
+?>
