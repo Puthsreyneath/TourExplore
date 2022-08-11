@@ -49,33 +49,37 @@
         <div class="flex items-center justify-center min-h-screen container mx-auto my-10">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 ">
               {{-- card 1 --}}
-              <div class="flex flex-col rounded-xl shadow-lg bg-white">
-                <div class="rounded-t-xl  overflow-hidden">
-                  <img class="w-full h-full object-fill"
-                    src="https://www.collinsdictionary.com/images/full/giftshop_400698646_1000.jpg"
-                    alt="Pidan Silk">
-                </div>
-                <div class="px-8 pt-5 flex-1">
-                  <div class="flex flex-row justify-between">
-                      <div class="flex flex-col">
-                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Pidan Silk</h5>
-                          <h6>Sihanoukville</h6>
+              <div>
+                <a href="/product_detail" class="{{ Request::is('product_detail') ? '' : '' }}">
+                  <div class="flex flex-col rounded-xl shadow-lg bg-white">
+                    <div class="rounded-t-xl  overflow-hidden">
+                      <img class="w-full h-full object-fill"
+                        src="https://www.collinsdictionary.com/images/full/giftshop_400698646_1000.jpg"
+                        alt="Pidan Silk">
+                    </div>
+                    <div class="px-8 pt-5 flex-1">
+                      <div class="flex flex-row justify-between">
+                          <div class="flex flex-col">
+                              <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Pidan Silk</h5>
+                              <h6>Sihanoukville</h6>
+                          </div>
+                          <div class="flex items-center justify-center">
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                          </div>
                       </div>
-                      <div class="flex items-center justify-center">
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                      </div>
+                      <p class="text-lg text-slate-500 mt-3">Lorem ipsum dolor sit,sum doloripsum dolor sit,su si aorem ipsum
+                        dolor sit, amet conmet consectetur adipisicing elit. Sequi id consequuntur nostrum beatae?</p>
+                    </div>
+                    <div class="ml-auto flex">
+                        <a href="{{url('/detail')}}"
+                          class="py-2 px-5 m-5 text-center bg-green-400 text-white rounded-full font-medium hover:bg-slate-500 dark:bg-gray-700 dark:hover:bg-gray-400">Detail</a>
+                    </div>
                   </div>
-                  <p class="text-lg text-slate-500 mt-3">Lorem ipsum dolor sit,sum doloripsum dolor sit,su si aorem ipsum
-                    dolor sit, amet conmet consectetur adipisicing elit. Sequi id consequuntur nostrum beatae?</p>
-                </div>
-                <div class="ml-auto flex">
-                    <a href="{{url('/detail')}}"
-                      class="py-2 px-5 m-5 text-center bg-green-400 text-white rounded-full font-medium hover:bg-slate-500 dark:bg-gray-700 dark:hover:bg-gray-400">Detail</a>
-                </div>
+                </a>
               </div>
         
               {{-- card 2 --}}
