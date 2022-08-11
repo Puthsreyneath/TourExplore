@@ -6,10 +6,10 @@
 
 <section class="md:w-[90%] w-4/5 mx-auto">
     <div class="mt-5">
-        <button
+        <a href="{{url('/explore')}}"
             class="dark:bg-gray-500 dark:hover:bg-gray-800 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-7 rounded-full">
             Back
-        </button>
+    </a>
         <h1 class="my-10 font-black text-4xl text-green-700 dark:text-white text-center">Koh kong Mangrove Forest</h1>
         <img class="rounded-3xl w-full h-full object-fill"
             src="https://angkorfocus.com/backoffice/uploads/attraction-Koh%20Kong%20Introduction%20Mangrove%20Forest%20Koh%20Kong.jpg"

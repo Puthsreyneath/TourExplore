@@ -87,9 +87,9 @@
       <div class="mld:ml-20 mt-10 mld:w-1/2 flex flex-col items-center">
         <h1 class="mld:text-2xl text-xl text-center dark:text-white">We are specialize in capture information and
           provide you a good impression on each place you want to visit.</h1>
-        <button
+        <a href="{{url('/about_us')}}"
           class="text-white py-2 px-3 bg-green-600 mt-5 rounded-full hover:shadow-lg hover:shadow-green-400 dark:bg-gray-400">know
-          us more</button>
+          us more</a>
       </div>
     </div>
   </div>
@@ -125,7 +125,7 @@
           <i class="fa-solid fa-star text-yellow-400"></i>
         </div>
 
-        <a href="#"
+        <a href="{{url('/explore')}}"
           class="py-2 m-5 text-center bg-green-400 text-white rounded-full font-medium hover:bg-slate-500 dark:bg-gray-700 dark:hover:bg-gray-400">Explore</a>
       </div>
 
