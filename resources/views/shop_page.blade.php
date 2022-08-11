@@ -71,8 +71,7 @@
                             <i class="fa-solid fa-star text-yellow-400"></i>
                           </div>
                       </div>
-                      <p class="text-lg text-slate-500 mt-3">Lorem ipsum dolor sit,sum doloripsum dolor sit,su si aorem ipsum
-                        dolor sit, amet conmet consectetur adipisicing elit. Sequi id consequuntur nostrum beatae?</p>
+                      <p class="text-lg text-slate-500 mt-3">A pidan is a type of silk cloth used in Cambodian and Khmer weddings, funerals, and Buddhist ceremonies as a canopy or tapestry.</p>
                     </div>
                     <div class="ml-auto flex">
                         <a href="{{url('/detail')}}"
@@ -86,14 +85,14 @@
               <div class="flex flex-col rounded-xl shadow-lg bg-white">
                 <div class="rounded-t-xl  overflow-hidden">
                   <img class="w-full h-full object-fill"
-                    src="https://www.collinsdictionary.com/images/full/giftshop_400698646_1000.jpg"
-                    alt="Pidan Silk">
+                    src="https://a.cdn-hotels.com/gdcs/production99/d1048/41d0d7b0-0059-4340-91bc-feb4ada1c937.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
+                    alt="Sculptured Statue">
                 </div>
                 <div class="px-8 pt-5 flex-1">
                   <div class="flex flex-row justify-between">
                       <div class="flex flex-col">
-                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Pidan Silk</h5>
-                          <h6>Sihanoukville</h6>
+                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Sculptured Statue</h5>
+                          <h6>Koh Kong</h6>
                       </div>
                       <div class="flex items-center justify-center">
                         <i class="fa-solid fa-star text-yellow-400"></i>
@@ -103,8 +102,7 @@
                         <i class="fa-solid fa-star text-yellow-400"></i>
                       </div>
                   </div>
-                  <p class="text-lg text-slate-500 mt-3">Lorem ipsum dolor sit,sum doloripsum dolor sit,su si aorem ipsum
-                    dolor sit, amet lorem423 conmet consectetur aquuntur nostrum beatae?</p>
+                  <p class="text-lg text-slate-500 mt-3">The intrinsic skill of craftsmen – using the same locally mined stone used to build the ancient temples – produces sculptures.</p>
                 </div>
                 <div class="ml-auto flex">
                     <a href="#"
@@ -116,14 +114,14 @@
               <div class="flex flex-col rounded-xl shadow-lg bg-white">
                 <div class="rounded-t-xl  overflow-hidden">
                   <img class="w-full h-full object-fill"
-                    src="https://www.collinsdictionary.com/images/full/giftshop_400698646_1000.jpg"
-                    alt="Pidan Silk">
+                    src="https://a.cdn-hotels.com/gdcs/production7/d1251/cfe24dae-c02c-4d44-aa7e-fd51645f5e04.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
+                    alt="Basketry">
                 </div>
                 <div class="px-8 pt-5 flex-1">
                   <div class="flex flex-row justify-between">
                       <div class="flex flex-col">
-                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Pidan Silk</h5>
-                          <h6>Sihanoukville</h6>
+                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Basketry</h5>
+                          <h6>Siem Reap</h6>
                       </div>
                       <div class="flex items-center justify-center">
                         <i class="fa-solid fa-star text-yellow-400"></i>
@@ -133,8 +131,7 @@
                         <i class="fa-solid fa-star text-yellow-400"></i>
                       </div>
                   </div>
-                  <p class="text-lg text-slate-500 mt-3">Lorem ipsum dolor sit,sum doloripsum dolor sit,su si aorem ipsum
-                    dolor sit, amet conmet Lorem consectetur adipisicing elit. Sequi id consequuntur nostrum beatae?</p>
+                  <p class="text-lg text-slate-500 mt-3">The making of woven basketry in Cambodia is carried out mainly by women, many of whom cultivate and harvest the reeds by themselves.</p>
                 </div>
                 <div class="ml-auto flex">
                     <a href="#"
@@ -146,14 +143,14 @@
               <div class="flex flex-col rounded-xl shadow-lg bg-white">
                 <div class="rounded-t-xl  overflow-hidden">
                   <img class="w-full h-full object-fill"
-                    src="https://www.collinsdictionary.com/images/full/giftshop_400698646_1000.jpg"
-                    alt="Pidan Silk">
+                    src="https://a.cdn-hotels.com/gdcs/production77/d932/6d391f78-75f1-443a-9d16-80aa89fcc83c.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
+                    alt="Betel nut boxes">
                 </div>
                 <div class="px-8 pt-5 flex-1">
                   <div class="flex flex-row justify-between">
                       <div class="flex flex-col">
-                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Pidan Silk</h5>
-                          <h6>Sihanoukville</h6>
+                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Betel nut boxes</h5>
+                          <h6>Siem Reap</h6>
                       </div>
                       <div class="flex items-center justify-center">
                         <i class="fa-solid fa-star text-yellow-400"></i>
@@ -163,9 +160,7 @@
                         <i class="fa-solid fa-star text-yellow-400"></i>
                       </div>
                   </div>
-                  <p class="text-lg text-slate-500 mt-3">Lorem ipsum dolor sit,sum doloripsum dolor sit,su si aorem ipsum
-                    dolor sit, amet conmet consectetur Lorem ipsum dolor sit.adipisicing elit. Sequi id consequuntur nostrum
-                    beatae?</p>
+                  <p class="text-lg text-slate-500 mt-3">These cute containers once reflected their user's status according to its size, design and the material from which it was made.</p>
                 </div>
                 <div class="ml-auto flex">
                     <a href="#"
@@ -177,13 +172,13 @@
               <div class="flex flex-col rounded-xl shadow-lg bg-white">
                 <div class="rounded-t-xl  overflow-hidden">
                   <img class="w-full h-full object-fill"
-                    src="https://www.collinsdictionary.com/images/full/giftshop_400698646_1000.jpg"
-                    alt="Pidan Silk">
+                    src="https://a.cdn-hotels.com/gdcs/production72/d1537/f4db2324-5a28-470e-a3e9-bfe71cb739ff.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
+                    alt="Gold Ring">
                 </div>
                 <div class="px-8 pt-5 flex-1">
                   <div class="flex flex-row justify-between">
                       <div class="flex flex-col">
-                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Pidan Silk</h5>
+                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Gold Ring</h5>
                           <h6>Sihanoukville</h6>
                       </div>
                       <div class="flex items-center justify-center">
@@ -194,8 +189,7 @@
                         <i class="fa-solid fa-star text-yellow-400"></i>
                       </div>
                   </div>
-                  <p class="text-lg text-slate-500 mt-3">Lorem ipsum dolor sit,sum doloripsum dolor sit,su si aorem ipsum
-                    dolor sit, antur nostrum beatae?</p>
+                  <p class="text-lg text-slate-500 mt-3">Jewellery tends to be simple and unsophisticated, and although locally mined precious stones – especially rubies, sapphires and emeralds.</p>
                 </div>
                 <div class="ml-auto flex">
                     <a href="#"
@@ -207,14 +201,14 @@
               <div class="flex flex-col rounded-xl shadow-lg bg-white">
                 <div class="rounded-t-xl  overflow-hidden">
                   <img class="w-full h-full object-fill"
-                    src="https://www.collinsdictionary.com/images/full/giftshop_400698646_1000.jpg"
-                    alt="Pidan Silk">
+                    src="https://a.cdn-hotels.com/gdcs/production18/d434/f48500d1-1df7-49fc-95d9-ff815634443d.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
+                    alt="Silver Ring">
                 </div>
                 <div class="px-8 pt-5 flex-1">
                   <div class="flex flex-row justify-between">
                       <div class="flex flex-col">
-                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Pidan Silk</h5>
-                          <h6>Sihanoukville</h6>
+                          <h5 class="text-lg text-green-700 md:text-2xl font-bold mt-3">Silver Ring</h5>
+                          <h6>Koh Kong</h6>
                       </div>
                       <div class="flex items-center justify-center">
                         <i class="fa-solid fa-star text-yellow-400"></i>
@@ -224,9 +218,7 @@
                         <i class="fa-solid fa-star text-yellow-400"></i>
                       </div>
                   </div>
-                  <p class="text-lg text-slate-500 mt-3">Lorem ipsum dolor sit,sum doloripsum dolor sit,su si aorem ipsum
-                    dolor sit, amet conmet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, sed. Minima, est.
-                    consectetur adipisicing elit. Sequi id consequuntur nostrum beatae?</p>
+                  <p class="text-lg text-slate-500 mt-3">Silver was prized in the 11th century for religious and ceremonial purposes. With Cambodia's tourism industry expanding.</p>
                 </div>
                 <div class="ml-auto flex">
                     <a href="#"
