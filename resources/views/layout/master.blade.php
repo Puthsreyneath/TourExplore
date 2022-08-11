@@ -43,12 +43,12 @@
                 </div>
                 <i class="fa-solid fa-bars text-2xl mld:hidden px-8" @click="openMenu = !openMenu"></i>
                 <ul class="hidden mld:flex mld:items-center  text-xl font-semibold cursor-pointer">
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="">home</a></li>
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="">About</a></li>
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="">Explore</a></li>
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="">Shop</a></li>
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="">Service</a></li>
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white mr-10"><a href="">Contact</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/" class="{{  Request::is('/') ? 'border-b-2 border-b-white' : '' }}">home</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/test" class="{{ Request::is('test') ? 'border-b-2 border-b-white' : '' }}">About</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/explore" class="{{  Request::is('explore') ? 'border-b-2 border-b-white' : '' }}">Explore</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Shop</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Service</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white mr-10"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Contact</a></li>
                     <li><a href=""><i class="fa-solid fa-circle-user text-2xl mr-8"></i></a></li>
                 </ul>
             </div>
@@ -59,12 +59,12 @@
     :class="openMenu ? 'visible' : 'invisible' " x-cloak>
         <ul class="absolute top-0 right-0 bottom-0 w-3/5 py-8 drop-shadow-2xl bg-[#6EDE8A] dark:bg-gray-800 text-white text-lg transition-all duration-500"
         :class="openMenu ? 'translate-x-0' : 'translate-x-full' ">
-            <li class="capitalize hover:bg-green-300  border-b border-white p-4 dark:hover:bg-gray-700"><a href="">home</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white p-4 dark:hover:bg-gray-700"><a href="">About</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white p-4 dark:hover:bg-gray-700"><a href="">Explore</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white p-4 dark:hover:bg-gray-700"><a href="">Shop</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white p-4 dark:hover:bg-gray-700"><a href="">Service</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white p-4 dark:hover:bg-gray-700"><a href="">Contact</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/" class="block p-4 {{ Request::is('/') ? 'bg-green-300 dark:bg-gray-700' : '' }}">home</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/test" class="block p-4 {{ Request::is('test') ? 'bg-green-300 dark:bg-gray-700' : '' }}">About</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/explore" class="block p-4 {{ Request::is('explore') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Explore</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Shop</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Service</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Contact</a></li>
             <li><a href=""><i class="fa-solid fa-circle-user p-4"></i></a></li>
         </ul>
 
