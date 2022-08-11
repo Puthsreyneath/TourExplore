@@ -24,12 +24,35 @@
                     <option value="{{$p->location->province}}">{{$p->location->province}}</option>
                 @endforeach   
             </select>
+<<<<<<< HEAD
             <input type="search">
+=======
+            <input type="search" name="search" id="search">
+            <script type="text/javascript">
+                $('#search').on('keyup',function(){
+                    $value=$(this).val();
+                    $.ajax({
+                        type: 'get',
+                        url:'{{URL::to('search')}}',
+                        data:{'search':$value},
+                        success:function(data){
+                            console.log(data);
+                            $('#content'.html(data);)
+                        }
+                    })
+                })
+
+            </script>
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581
                 
             <button>Search</button>
             </form>
             
         </div>
+<<<<<<< HEAD
+=======
+        <div id='content'></div>
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581
     </div>
     </section >
     

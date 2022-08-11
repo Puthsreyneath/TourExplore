@@ -83,7 +83,7 @@
                     dolor sit, amet conmet consectetur adipisicing elit. Sequi id consequuntur nostrum beatae?</p>
                 </div>
                 <div class="ml-auto flex">
-                    <a href="#"
+                    <a href="{{url('/detail')}}"
                       class="py-2 px-5 m-5 text-center bg-green-400 text-white rounded-full font-medium hover:bg-slate-500 dark:bg-gray-700 dark:hover:bg-gray-400">Detail</a>
                 </div>
               </div>

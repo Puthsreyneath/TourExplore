@@ -1,7 +1,11 @@
 @extends('layout.master')
+<<<<<<< HEAD
 @include('dbconfig.testdb')
 @section('title', 'Book')
 
+=======
+@section('title', 'Book')
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581
 @section('content')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <script src="./main.js"></script>   

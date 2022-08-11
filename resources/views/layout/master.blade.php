@@ -44,12 +44,26 @@
                 <i class="fa-solid fa-bars text-2xl mld:hidden px-8" @click="openMenu = !openMenu"></i>
                 <ul class="hidden mld:flex mld:items-center  text-xl font-semibold cursor-pointer">
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/" class="{{  Request::is('/') ? 'border-b-2 border-b-white' : '' }}">home</a></li>
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/test" class="{{ Request::is('test') ? 'border-b-2 border-b-white' : '' }}">About</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/about_us" class="{{ Request::is('about_us') ? 'border-b-2 border-b-white' : '' }}">About</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/explore" class="{{  Request::is('explore') ? 'border-b-2 border-b-white' : '' }}">Explore</a></li>
+<<<<<<< HEAD
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Shop</a></li>
+=======
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/shop" class="{{  Request::is('/shop') ? 'border-b-2 border-b-white' : '' }}">Shop</a></li>
+>>>>>>> 26cab8822e1abedf99df86d836d2024e05eec581
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/service" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Service</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white mr-10"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Contact</a></li>
-                    <li><a href=""><i class="fa-solid fa-circle-user text-2xl mr-8"></i></a></li>
+                    <li>@if (Route::has('register'))
+                        <div class="  px-6 py-4 block">
+                            @auth
+                                <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                            @else
+                                
+                                <a href="{{ route('register') }}" ><i class="fa-solid fa-circle-user p-4"></i></a>
+                                
+                            @endauth
+                        </div>
+                    @endif</li>
                 </ul>
             </div>
         </nav>
@@ -60,12 +74,25 @@
         <ul class="absolute top-0 right-0 bottom-0 w-3/5 py-8 drop-shadow-2xl bg-[#6EDE8A] dark:bg-gray-800 text-white text-lg transition-all duration-500"
         :class="openMenu ? 'translate-x-0' : 'translate-x-full' ">
             <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/" class="block p-4 {{ Request::is('/') ? 'bg-green-300 dark:bg-gray-700' : '' }}">home</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/test" class="block p-4 {{ Request::is('test') ? 'bg-green-300 dark:bg-gray-700' : '' }}">About</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/about_us" class="block p-4 {{ Request::is('about_us') ? 'bg-green-300 dark:bg-gray-700' : '' }}">About</a></li>
             <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/explore" class="block p-4 {{ Request::is('explore') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Explore</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Shop</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Service</a></li>
-            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Contact</a></li>
-            <li><a href=""><i class="fa-solid fa-circle-user p-4"></i></a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/shop" class="block p-4 {{ Request::is('shop') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Shop</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/service" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Service</a></li>
+            <li class="capitalize hover:bg-green-300  border-b border-white  dark:hover:bg-gray-700"><a href="/about_us" class="block p-4 {{ Request::is('//') ? 'bg-green-300 dark:bg-gray-700' : '' }}">Contact</a></li>
+            <li>
+                    @if (Route::has('register'))
+                    <div class="  px-6 py-4 block">
+                        @auth
+                            <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                        @else
+                            
+                            <a href="{{ route('register') }}" ><i class="fa-solid fa-circle-user p-4"></i></a>
+                            
+                        @endauth
+                    </div>
+                @endif
+                    
+            </li>
         </ul>
 
         <button class="absolute top-0 right-0 bottom-0" @click="openMenu = !openMenu">
@@ -122,14 +149,14 @@
                     <div class="grid grid-cols-2 gap-6">
                         <div>
                             <h3 class="capitalize font-extrabold text-xl dark:text-white">service</h3>
-                            <a href="#" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">service</a>
-                            <a href="#" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">shop</a>
-                            <a href="#" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">explore</a>
+                            <a href="#http://127.0.0.1:8000/service" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">service</a>
+                            <a href="#http://127.0.0.1:8000/shop" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">shop</a>
+                            <a href="#http://127.0.0.1:8000/explore" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">explore</a>
                         </div>
 
                         <div>
                             <h3 class="capitalize font-extrabold text-xl dark:text-white">term</h3>
-                            <a href="#" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">about us</a>
+                            <a href="#http://127.0.0.1:8000/about_us" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">about us</a>
                             <a href="#" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">contact</a>
                             <a href="#" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">store's policy</a>
                             <a href="#" class="capitalize block mt-2 text-sm dark:text-gray-400 hover:underline">FAQ</a>
