@@ -11,7 +11,7 @@
             <h2 class="text-green-800 dark:text-gray-100 text-3xl md:text-4xl lg:text-6xl text-center lg:text-left mb-6">Find Suvenirs<br>in Locations<br>You're visiting. <br>Here!
             </h2>
             <p class="md:text-lg text-base text-green-500 dark:text-gray-400 text-center lg:text-left mb-6">
-                You can find everythings you want, wherever you go, wherever Location.
+                You can find everythings you want. <br>Wherever you go, Wherever you are.
             </p>
         </div>
         <div class="flex justify-center flex-1">
