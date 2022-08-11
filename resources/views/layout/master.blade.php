@@ -46,7 +46,7 @@
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/" class="{{  Request::is('/') ? 'border-b-2 border-b-white' : '' }}">home</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/about_us" class="{{ Request::is('about_us') ? 'border-b-2 border-b-white' : '' }}">About</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/explore" class="{{  Request::is('explore') ? 'border-b-2 border-b-white' : '' }}">Explore</a></li>
-                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/shop" class="{{  Request::is('/shop') ? 'border-b-2 border-b-white' : '' }}">Shop</a></li>
+                    <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="/shop" class="{{  Request::is('shop') ? 'border-b-2 border-b-white' : '' }}">Shop</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Service</a></li>
                     <li class="capitalize mx-4  border-b-2 border-transparent hover:border-white mr-10"><a href="" class="{{  Request::is('') ? 'border-b-2 border-b-white' : '' }}">Contact</a></li>
                     <li>@if (Route::has('register'))
